@@ -10,4 +10,6 @@
 ## Technologies :
 - Tailwind CSS
 - React.js
+- React-context-api
+- React-router-dom
 
