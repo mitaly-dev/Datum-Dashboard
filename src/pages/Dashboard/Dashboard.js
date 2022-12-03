@@ -9,7 +9,7 @@ const Dashboard = () => {
     const {sidebarOpen, showSidebar,setShowSidebar} = useContext(DashboardContext)
     return (
         <div className='p-4 pt-0 text-white bg-primary dark:bg-dark '>
-            <div className='flex items-center justify-between sticky top-0 bg-primary dark:bg-dark pt-5 pb-3 w-full'>
+            <div className='flex items-center justify-between sticky top-0 bg-primary dark:bg-dark pt-5 pb-3 w-full z-50'>
                 <div className='flex items-center'>
                     <img src={logo} alt="logo" className='w-12 pr-2 '/>
                     <h3 className={`font-semibold text-[19px] font-dmSans tracking-wider ${!sidebarOpen && 'hidden'}`}>
