@@ -37,11 +37,11 @@ const DashboardItem = ({menu}) => {
             return  <li key={index} onClick={()=>submenu || setSidebarOpen(true)}>
                         <NavLink to={path} className={({isActive})=>isActive ? 'text-accent' : 'text-accent'}>
                             <div onClick={()=>submenu && handleSubMenu(name)} 
-                            className='px-3 py-2 rounded-md hover:bg-[hsla(0,0%,100%,.08)] hover:text-white duration-200 flex items-center justify-between'>
+                            className='px-3 py-2 rounded-md hover:bg-[hsla(0,0%,100%,.08)] hover:text-white flex items-center justify-between duration-200'>
                                 {
                                     !sidebarOpen ? <span className='m-auto'>{icon}</span> :
                                 <>
-                                    <div className={`flex items-center justify-between`}>
+                                    <div className='flex items-center justify-between'>
                                         <span className='mr-4'>{icon}</span>
                                         <span className='capitalize text-[14px] font-medium dark:text-white'>{name}</span>
                                     </div>
